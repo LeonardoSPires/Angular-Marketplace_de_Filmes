@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { CheckoutService } from 'src/app/view/checkout/checkout.service';
-import { Film } from 'src/app/view/home/list-films/film.model';
+import { CheckoutService } from 'src/app/views/checkout/checkout.service';
+import { Film } from 'src/app/views/list-films/film.model';
 
 @Component({
   selector: 'app-card-film',

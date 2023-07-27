@@ -1,1 +1,18 @@
-<p>card-film works!</p>
+<mat-card-content class="mat-card-container" *ngFor="let film of listFilms">
+  <mat-card class="card-film">
+    <mat-card-title>
+        <h2>{{film.name}}</h2>
+    </mat-card-title>
+    <mat-card-subtitle>
+        <h3> {{film.category}} </h3>
+    </mat-card-subtitle>
+    <mat-card-content class="card-content">
+        <img src="{{film.imgLink}}" alt="capa">
+        <p class="card-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus officia id dolor ad, tempora laboriosam error nulla nisi et maiores in assumenda, accusantium excepturi doloremque esse placeat aspernatur dolorem!
+        </p>
+        <p class="card-description"> {{film.price}} </p>
+        <app-select-button></app-select-button>
+    </mat-card-content>
+  </mat-card>
+</mat-card-content>

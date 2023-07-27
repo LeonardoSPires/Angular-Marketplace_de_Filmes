@@ -4,19 +4,10 @@
         <a mat-list-item routerLink="/">
           <p><i class="material-icons">home</i> home</p>
         </a>
-
-    </mat-list>
-
-    <mat-list class="mat-list">
-
-        <a mat-list-item href="">
+        <a mat-list-item routerLink="/list-films">
           <p><i class="material-icons">theaters</i> List Films</p>
         </a>
-
-    </mat-list>
-
-    <mat-list class="mat-list">
-      <a mat-list-item href="">
+        <a mat-list-item href="">
         <p><i class="material-icons">import_contacts</i> About the author</p>
       </a>
     </mat-list>
@@ -26,7 +17,7 @@
     <button mat-icon-button (click)="sidenav.toggle()" class="mat-nav-button">
       <i class="material-icons">menu</i>
     </button>
-    <app-card-film></app-card-film>
+
     <router-outlet></router-outlet>
   </mat-sidenav-content>
 
