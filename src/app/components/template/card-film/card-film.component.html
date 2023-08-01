@@ -12,7 +12,7 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus officia id dolor ad, tempora laboriosam error nulla nisi et maiores in assumenda, accusantium excepturi doloremque esse placeat aspernatur dolorem!
         </p>
         <p class="card-description"> {{film.price}} </p>
-        <app-select-button></app-select-button>
+        <app-select-button  (click)="selectFilm(film)"></app-select-button>
     </mat-card-content>
   </mat-card>
 </mat-card-content>

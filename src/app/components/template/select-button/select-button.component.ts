@@ -7,24 +7,23 @@ import { CheckoutService } from 'src/app/views/checkout/checkout.service';
   styleUrls: ['./select-button.component.css']
 })
 export class SelectButtonComponent implements OnInit {
-unselectFilm() {
-  this.disabled = false;
-      this.checkoutService.unselectFilm()
-}
-selectFilm() {
-  this.disabled = true;
-      this.checkoutService.selectFilm();
-}
   disabled = false;
 
   constructor(private checkoutService: CheckoutService) { }
 
   ngOnInit(): void {
+  }
 
-
-
+  selectFilm() {
+    this.disabled = true;
+    this.checkoutService.selectFilm();
+  }
+  unselectFilm() {
+    this.disabled = false;
+    this.checkoutService.unselectFilm();
   }
 
 }
+
 
 
