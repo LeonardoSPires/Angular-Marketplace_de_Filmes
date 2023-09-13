@@ -1,10 +1,11 @@
 .mat-card-container {
   display: inline-flex;
   margin-top: 15px;
+  align-items: center;
 }
 h2 {
   padding-left: 10px;
-  height: 50px;
+  height: 30px;
 }
 
 h3 {
@@ -13,9 +14,10 @@ h3 {
 }
 
 .card-film {
-  width: 350px;
+  width: 410px;
   height: 100%;
   margin: 0 15px 15px 0;
+
 }
 
 .card-content {
@@ -27,12 +29,26 @@ h3 {
   width: 250px;
   opacity: .8;
   transition: .2s;
+  border-radius: 5px;
 }
-
-.card-contet img {
+.card-content img:hover {
+  transform: scale(1.08);
   opacity: 1;
 }
 
 .card-description {
-  text-align: left;
+  color: grey;
+  font-size: 12px;
+}
+span {
+  text-align: right;
+  padding: 10px;
+  color: grey;
+  font-size: 12px;
+}
+app-card-film{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
 }

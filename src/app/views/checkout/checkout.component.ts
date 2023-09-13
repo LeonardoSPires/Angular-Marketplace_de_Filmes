@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Film } from '../list-films/film.model';
 import { CheckoutService } from './checkout.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-checkout',
@@ -14,12 +15,21 @@ export class CheckoutComponent implements OnInit {
   hide = true;
   form: any;
 
-  constructor(private checkoutService: CheckoutService) { }
+  constructor(private checkoutService: CheckoutService, private route: Router) { }
 
   ngOnInit(): void {
     this.totalPrice = this.checkoutService.totalPrice;
     this.listSelectedFilms = this.checkoutService.listSelectedFilms;
     this.toggleButtom();
+  }
+
+  payment(): void {
+    this.checkoutService.showMessage("Payment!", true);
+    this.route.navigate(['../list-films']);
+  }
+
+  cancel(): void {
+    this.route.navigate(['../list-films']);
   }
 
   toggleButtom() {
@@ -34,14 +44,14 @@ export class CheckoutComponent implements OnInit {
     if (this.totalPrice <= 0) {
       this.excludeAll();
     }
-    }
-
-    excludeAll() {
-      this.checkoutService.totalPrice = 0;
-      this.totalPrice = 0;
-      this.checkoutService.listSelectedFilms = [];
-      this.listSelectedFilms = [];
-      this.toggleButtom();
-    }
   }
+
+  excludeAll() {
+    this.checkoutService.totalPrice = 0;
+    this.totalPrice = 0;
+    this.checkoutService.listSelectedFilms = [];
+    this.listSelectedFilms = [];
+    this.toggleButtom();
+  }
+}
 

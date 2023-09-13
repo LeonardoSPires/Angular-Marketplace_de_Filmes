@@ -1,0 +1,71 @@
+.mat-card-main {
+  background-color: #2c2c2c;
+
+}
+.checkout {
+  color: #f2f2f2;
+}
+.mat-card-film.isValid {
+  display: none;
+}
+.mat-card-film:hover {
+  background-color: #f2f2f2;
+}
+.mat-card-content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  align-items: center;
+
+}
+.card_film{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  width: 300px;
+  height: 450px;
+
+}
+
+.exclud{
+  text-align: right ;
+}
+
+.films{
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+
+
+}
+
+.actions-container{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.excludAll {
+  width: 250px;
+  margin: 10px 15px;
+}
+
+
+
+.button > mat-cancel{
+  background-color: #eb3f5b;
+  color: #f2f2f2;
+}
+.selected{
+  margin: 0 15px;
+}
+
+mat-card {
+
+  padding: 5px;
+}
+
