@@ -34,11 +34,9 @@
 }
 
 .films{
-  display: flex;
+
   flex-direction: row;
   padding: 5px;
-
-
 }
 
 .actions-container{
@@ -54,18 +52,16 @@
   margin: 10px 15px;
 }
 
-
-
 .button > mat-cancel{
   background-color: #eb3f5b;
   color: #f2f2f2;
 }
+
 .selected{
   margin: 0 15px;
 }
 
 mat-card {
-
   padding: 5px;
 }
 

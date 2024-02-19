@@ -1,30 +1,46 @@
+
+
+mat-card{
+  height: auto;
+}
 mat-card-title{
-  padding: 10px;
+  font-size: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 
 mat-card-subtitle{
-  padding: 10px;
+  font-size: 10px;
+  padding-left: 10px;
+  height: 20px;
 }
+
 mat-card-content{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
+  flex-direction: row;
 }
 
-.list_films{
-  padding-bottom: 15px;
-
-}
 .button__toCheckout {
   text-decoration: none;
   color: #f2f2f2;
 }
 
+.btn_shop{
+  text-align: right;
+  padding-right: 50px;
+  position: fixed;
+  top: 150px;
+  right: 0;
+  z-index: 1;
+}
+
 .fab-button{
-  margin-top: 15px;
-  margin-left: 15px;
-  width: 50px;
+
+  margin-top: 5px;
+  margin-left: 10px;
+  width: 100%;
+  align-items: end;
+
 }
 
 .fab-button .btn-description{
@@ -35,7 +51,20 @@ mat-card-content{
   background-color: #fff;
   color: #2c2c2c;
   border-radius: 4px;
+
 }
 .fab-button:hover .btn-description {
-  display: block;
+  display: flex;
 }
+
+.card_list_film{
+  width: 400px;
+}
+
+.list_films{
+
+  padding-bottom: 5px;
+  width: 250px;
+
+}
+

@@ -1,31 +1,43 @@
+
+
 <mat-card>
-    <mat-card-title>
-        <h1>List films</h1>
-    </mat-card-title>
+
+  <mat-card-title>
+    <h1>List films</h1>
+  </mat-card-title>
+
+  <div class="fab-button">
+
+    <div class="btn_shop">
+      <button mat-fab
+        color="primary"
+        matBadge="{{toggleCount()}}"
+        matBadgePosition="after"
+        matBadgeColor="accent"
+        [matBadgeHidden]="hidden"
+        (mouseover)="toggleBadgeVisibility()"
+        (mouseout)="toggleBadgeVisibility()"
+        (click)="toCheckout()">
+        <i class="material-icons">shopping_cart</i>
+        <p class="btn-description">To Checkout!</p>
+    </button>
+    </div>
+
+  </div>
+
     <mat-card-subtitle>
       <h2> {{listFilms.length}} films found </h2>
     </mat-card-subtitle>
-    <mat-card-content>
-      <div class="list_films">
+      <mat-card-content>
+
         <app-card-film></app-card-film>
-      </div>
-    </mat-card-content>
+
+      </mat-card-content>
+
+
 
 </mat-card>
-<div class="fab-button">
-  <button mat-fab
-    color="primary"
-    matBadge="{{toggleCount()}}"
-    matBadgePosition="after"
-    matBadgeColor="accent"
-    [matBadgeHidden]="hidden"
-    (mouseover)="toggleBadgeVisibility()"
-    (mouseout)="toggleBadgeVisibility()"
-    (click)="toCheckout()">
-    <i class="material-icons">shopping_cart</i>
-    <p class="btn-description">To Checkout!</p>
-  </button>
-</div>
+
 
 
 

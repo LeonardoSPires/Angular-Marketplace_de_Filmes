@@ -5,15 +5,19 @@
   bottom: 0;
   display: flex;
   justify-content: flex-end;
+  height: 30px;
 }
 
 .middle {
   vertical-align: middle;
 }
-
+.footer{
+  position: fixed;
+}
 .footer span {
   opacity: .8;
   transition: .2s;
+  font-size: 12px;
 }
 
 .footer span:hover {
@@ -29,4 +33,5 @@
   background-repeat: repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
 }

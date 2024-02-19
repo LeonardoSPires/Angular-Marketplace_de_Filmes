@@ -1,32 +1,29 @@
-.mat-card-container {
+.mat-card-container{
   display: inline-flex;
   margin-top: 15px;
-  align-items: center;
 }
-h2 {
+
+h2{
+  height: 0px;
   padding-left: 10px;
-  height: 30px;
+  font-size: 18px;
 }
 
 h3 {
+  height: 5px;
   padding-left: 10px;
-  padding-bottom: 10px;
+  font-size: 10px;
 }
 
 .card-film {
-  width: 410px;
-  height: 100%;
+  width: 200px;
+  height: 535px;
   margin: 0 15px 15px 0;
 
 }
 
-.card-content {
-  text-align: center;
-  padding: 10px;
-}
-
 .card-content img {
-  width: 250px;
+  width: 98%;
   opacity: .8;
   transition: .2s;
   border-radius: 5px;
@@ -36,19 +33,32 @@ h3 {
   opacity: 1;
 }
 
-.card-description {
+.card-value{
+  color: gray;
+  font-size: 10px;
+  padding: 10px;
+}
+
+.card-synopsis {
   color: grey;
-  font-size: 12px;
+  font-size: 10px;
+  text-align: justify;
 }
 span {
   text-align: right;
-  padding: 10px;
   color: grey;
   font-size: 12px;
 }
 app-card-film{
-  display: flex;
-  flex-direction: column;
   align-items: center;
   align-content: center;
+}
+
+.button_card{
+  height: 150px;
+  text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
+  padding-bottom: 10px;
+
 }

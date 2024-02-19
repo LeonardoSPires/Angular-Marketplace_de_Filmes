@@ -4,45 +4,43 @@
 
 .sidenav {
   background-color: #202020;
-  width: 200px;
   position: fixed;
-  top: 0;
 }
 
 .mat-nav-button {
-  margin-bottom: 1rem;
-  background-color: #2c2c2c;
-  color: #f2f2f2;
+
+  color: #202020;
   border: none;
   border-radius: 4px;
-}
-
-.sidenav .mat-list {
-  color: #f2f2f2;
 
 }
 
 .sidenav .mat-list {
   color: #f2f2f2;
-  font-size: 10px;
+
+}
+
+.sidenav .mat-list {
+  color: #f2f2f2;
+  font-size: 8px;
 
 }
 
 .sidenav .mat-list a p {
-  padding-right: 20px;
   display: flex;
   align-items: center;
   color: #f2f2f2;
-  font-size: 13px;
+  font-size: 8px;
 }
 
 .sidenav .mat-list a p i {
-  padding-right: 10px;
-
+  padding-right: 3px;
 }
 
 .content {
-  padding: 10px;
+  padding: 5px;
   background-color: #f2f2f2;
+  height: 750;
+
 }
 
